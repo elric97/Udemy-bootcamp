@@ -1,125 +1,171 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Bootstrap gallery</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
 	<!-- jquery script tag must come before the bootstrap one because it relies on jquery -->
 	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<style type="text/css">
 		body
 		{
-			padding: 70px;
+			padding-top: 70px;
 		}
+		.jumbotron
+		{
+			color: #2c3e50;
+			background: #ecf0f1;
+		}
+		.navbar-inverse
+		{
+			background: #2c3e50;
+		}
+		.navbar-inverse .navbar-nav > li > a 
+		{
+    		color: white;
+		}
+		.navbar-inverse .navbar-brand
+		{
+			color: white;
+		}
+		/*.thumbnail
+		{
+			height: 100%;
+			width: 100%;
+		}
+		.thumbnail img
+		{
+			width: 100%;
+			height: 250px;
+		}*/
 	</style>
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
-			<div class="navbar-header"> 
-				<!-- header to add elements and also add the hamburger elements -->
-				<!-- the below button class is used to show tha hamburger button -->
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span> <!-- these are the narrow lines we see in the button -->
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#"><i class="glyphicon glyphicon-picture"></i> IMGS</a>
-				<!-- navbar-brand used to set the brand name at the corner -->
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+				<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-picture"></span> IMGS</a>
 			</div>
 			<div class="collapse navbar-collapse" id="bs-nav-demo">
-			<!-- the above class is used to collapse the contents it encloses when it reaches a certain point -->
-				<div class="nav navbar-nav">
-					<!-- to add the rest of the contents -->
+				<ul class="nav navbar-nav">
 					<li><a href="#">About</a></li>
 					<li><a href="#">Contact</a></li>
-				</div>
-				<!-- We could have also used ul above instead of div both will work fine -->
+				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#">Sign Up</a></li>
 					<li><a href="#">Login</a></li>
 				</ul>
 			</div>
-		</div>	
+		</div>
 	</nav>
 	<div class="container">
 		<div class="jumbotron">
-			<h1><span class="glyphicon glyphicon-camera"></span> The Image Gallery</h1>
+			<h1><i class="fa fa-camera-retro" aria-hidden="true"></i>
+ The Image Gallery</h1>
 			<p>A bunch of images taken from unsplash</p>
 		</div>
 		<div class="row">
 			<div class="col-lg-4 col-sm-6">
 				<div class="thumbnail">
-					<img src="https://source.unsplash.com/dddQHervE04">
-				</div>	
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://source.unsplash.com/dddQHervE04">
-				</div>	
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://source.unsplash.com/dddQHervE04">
-				</div>	
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://source.unsplash.com/dddQHervE04">
-				</div>	
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://source.unsplash.com/dddQHervE04">
-				</div>	
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://source.unsplash.com/dddQHervE04">
-				</div>	
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://source.unsplash.com/dddQHervE04">
-				</div>	
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://source.unsplash.com/dddQHervE04">
-				</div>	
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://source.unsplash.com/dddQHervE04">
-				</div>	
-			</div>
-			<!-- <div class="col-lg-4">
-				<div class="thumbnail">
-					<img src="https://source.unsplash.com/YZdyJGsgW68">
-				</div>	
-			</div>
-			<div class="col-lg-4">
-				<div class="thumbnail">
-					<img src="https://source.unsplash.com/YZdyJGsgW68">
+					<img src="http://i.imgur.com/qK42fUu.jpg">
 				</div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-sm-6">
 				<div class="thumbnail">
-					<img src="https://source.unsplash.com/dddQHervE04">
-				</div>	
-			</div>
-			<div class="col-lg-4">
-				<div class="thumbnail">
-					<img src="https://source.unsplash.com/YZdyJGsgW68">
-				</div>	
-			</div>
-			<div class="col-lg-4">
-				<div class="thumbnail">
-					<img src="https://source.unsplash.com/YZdyJGsgW68">
+					<img src="https://images.unsplash.com/photo-1435771112039-1e5b2bcad966?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
 				</div>
-			</div> -->
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://images.unsplash.com/photo-1439524970634-649c37a69e5c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1450&h=825&fit=crop&s=bfda9916c885869b43b70738693428d9">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://images.unsplash.com/photo-1434543177303-ef2cc7707e0d?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://images.unsplash.com/photo-1436262513933-a0b06755c784?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://images.unsplash.com/photo-1439396087961-98bc12c21176?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
 		</div>
+		<!-- <div class="row">
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/dddQHervE04">
+				</div>	
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/dddQHervE04">
+				</div>	
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/dddQHervE04">
+				</div>	
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/dddQHervE04">
+				</div>	
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/dddQHervE04">
+				</div>	
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/dddQHervE04">
+				</div>	
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/dddQHervE04">
+				</div>	
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/dddQHervE04">
+				</div>	
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://source.unsplash.com/dddQHervE04">
+				</div>	
+			</div> 
+			
+		</div> -->
 	</div>
 	
 </body>
