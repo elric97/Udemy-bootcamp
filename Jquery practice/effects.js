@@ -1,4 +1,5 @@
 $('button').on('click',function()
 {
-	$('div').fadeOut(1000);
+	$('div').slideDown(1000);
 });
+
