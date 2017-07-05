@@ -14,7 +14,8 @@ app.get("/bye",function(req,res)
 //defining a pattern to match 
 app.get("/r/:anyName",function(req,res)
 {
-	res.send("hello there");
+	var val=req.params.anyName;
+	res.send("hello there you are in " + val);
 });
 //for any other get request other than defined we use * but we have to keep this below all the other routes to avoid matching to this
 app.get("*",function(req,res)
