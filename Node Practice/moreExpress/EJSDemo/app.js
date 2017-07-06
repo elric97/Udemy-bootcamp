@@ -11,7 +11,18 @@ app.get("/fallinlove/:name",function(req,res)
     res.render("love.ejs",{thingVar: thing});
 });
 
-app.listen(process.env.PORT,process.env.IP,function()
+app.get("/post",function(req, res) 
+{
+    var post=
+    [
+        {title: "yoho",author:"yoho ho" },
+        {title: "yoho",author:"yoho 2o" },
+        {title: "yoho",author:"yoho 3o" }
+    ];
+    
+    res.render("posts.ejs",{posts: post});
+});
+app.listen(3000,function()
 {
     console.log("server started");
 });
