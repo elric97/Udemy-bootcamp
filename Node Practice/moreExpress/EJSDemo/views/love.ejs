@@ -1,6 +1,10 @@
+<% include partials/header%>
+
 <h1>You fell in love with: <%= thingVar %></h1>
 <% if (thingVar.toLowerCase()==="rachit") { %>
     <p>Good Choice Rachit is best</p>
 <% } else { %>
     <p>Bad choice choose rachit</p>
 <% } %>
+
+<% include partials/footer %>
