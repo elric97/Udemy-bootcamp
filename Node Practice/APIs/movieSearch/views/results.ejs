@@ -1,0 +1,13 @@
+<style>
+    li
+    {
+        list-style: none;
+    }
+</style>
+
+<h1>Movies Matched: </h1>
+<ul>
+<% for(var i=0;i<data["Search"].length;i++) { %>
+    <li><p><%= data["Search"][i].Title %></p> <img src="<%=data["Search"][i].Poster%>" width="200" height="200"> </li>
+<% } %>
+</ul>
