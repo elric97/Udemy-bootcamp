@@ -12,25 +12,41 @@ var Cat = mongoose.model("Cat",catSchema);
 
 //adding a new cat
 
-var george = new Cat(
-{
-	name: "george",
-	age: "6"
-});
+// var george = new Cat(
+// {
+// 	name: "george",
+// 	age: "6"
+// });
 
-george.save(function(err,item)
+// george.save(function(err,item)
+// {
+// 	if(err)
+// 	{
+// 		console.log("some error");
+// 	}
+// 	else
+// 	{
+// 		console.log(item);
+// 	}
+// });
+
+Cat.create(
+{
+	name: "snow white",
+	age: 15
+},function(err,cat)
 {
 	if(err)
 	{
-		console.log("some error");
+		console.log(err);
 	}
 	else
 	{
-		console.log(item);
+		console.log(cat);
 	}
 });
 
-//retrieve all data 
+// retrieve all data 
 
 Cat.find({},function(err,cat)
 {
