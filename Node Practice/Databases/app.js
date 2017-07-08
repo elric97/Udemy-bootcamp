@@ -5,7 +5,7 @@ var catSchema = new mongoose.Schema(
 {
 	name: String,
 	age: Number,
-	
+
 });
 
 var Cat = mongoose.model("Cat",catSchema);
@@ -28,4 +28,19 @@ george.save(function(err,item)
 	{
 		console.log(item);
 	}
+});
+
+//retrieve all data 
+
+Cat.find({},function(err,cat)
+{
+    if(err)
+    {
+        console.log("oh no " + err);
+    }
+    else
+    {
+        console.log("All the cats");
+        console.log(cat);
+    }
 });
