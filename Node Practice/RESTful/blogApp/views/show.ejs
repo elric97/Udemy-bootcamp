@@ -13,6 +13,10 @@
                 <!--Instead of using = if we use - it evaluates the text being entered whether it's a code or not -->
                 <p><%- blog.body %></p>
             </div>
+            <a class="ui blue inverted button" href="/blogs/<%= blog._id %>/edit">Edit Blog</a>
+            <form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST" id="delete">
+                <button class="ui red inverted button">Delete</button>
+            </form>
         </div>
     </div>
    

@@ -6,3 +6,12 @@ i.icon
 {
     margin-top: 7.0em;
 }
+
+#delete
+{
+    display: inline;
+}
+#arrow
+{
+    top: 10px !important;
+}
