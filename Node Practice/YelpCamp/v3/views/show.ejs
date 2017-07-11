@@ -1,0 +1,13 @@
+<% include partials/header %>
+
+<h1><%= val.name %></h1>
+
+<img src="<%= val.image %>">
+<p><%= val.description %></p>
+<% val.comments.forEach(function(cmnt){%>
+    <p>
+        <strong><%= cmnt.author %></strong> - <%= cmnt.text %>
+    </p>
+<% }); %>
+
+<% include partials/footer %>
