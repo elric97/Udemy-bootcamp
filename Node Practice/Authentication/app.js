@@ -20,7 +20,7 @@ app.use(passport.session());
 app.use(bodyParser.urlencoded({extended: true}));
 
 //reading the session and decoding it, we have already included these method in user model 
-passport.use(new localstrategy(User.authenticate())); //local stratefy use that verion of authenticate coming from user model
+passport.use(new localstrategy(User.authenticate())); //local strategy use that verion of authenticate coming from user model
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
