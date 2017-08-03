@@ -212,7 +212,7 @@ function isLoggedIn(req,res,next)
 {
     if(req.isAuthenticated()) //checks if user is authenticated or not 
     {
-        return next;
+        return next();
     }
     res.redirect("/login");
 }
